@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="JP_QuanLySieuThiModelStoreContainer" CdmEntityContainer="JP_QuanLySieuThiEntities1">
+    <EntitySetMapping Name="admins">
+      <EntityTypeMapping TypeName="JP_QuanLySieuThiModel.admin">
+        <MappingFragment StoreEntitySet="admins">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="username" ColumnName="username" />
+          <ScalarProperty Name="password" ColumnName="password" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="catalogs">
+      <EntityTypeMapping TypeName="JP_QuanLySieuThiModel.catalog">
+        <MappingFragment StoreEntitySet="catalogs">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="catalog_id" ColumnName="catalog_id" />
+          <ScalarProperty Name="catalog_name" ColumnName="catalog_name" />
+          <ScalarProperty Name="catalog_image" ColumnName="catalog_image" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="orders">
+      <EntityTypeMapping TypeName="JP_QuanLySieuThiModel.order">
+        <MappingFragment StoreEntitySet="orders">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="transactions_id" ColumnName="transactions_id" />
+          <ScalarProperty Name="product_id" ColumnName="product_id" />
+          <ScalarProperty Name="quantity" ColumnName="quantity" />
+          <ScalarProperty Name="total_price" ColumnName="total_price" />
+          <ScalarProperty Name="data" ColumnName="data" />
+          <ScalarProperty Name="status" ColumnName="status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="products">
+      <EntityTypeMapping TypeName="JP_QuanLySieuThiModel.product">
+        <MappingFragment StoreEntitySet="products">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="product_id" ColumnName="product_id" />
+          <ScalarProperty Name="catalog_id" ColumnName="catalog_id" />
+          <ScalarProperty Name="product_name" ColumnName="product_name" />
+          <ScalarProperty Name="image_main" ColumnName="image_main" />
+          <ScalarProperty Name="image_sub" ColumnName="image_sub" />
+          <ScalarProperty Name="price" ColumnName="price" />
+          <ScalarProperty Name="content" ColumnName="content" />
+          <ScalarProperty Name="discount" ColumnName="discount" />
+          <ScalarProperty Name="quantity" ColumnName="quantity" />
+          <ScalarProperty Name="quantity_sold" ColumnName="quantity_sold" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="created" ColumnName="created" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="transactions">
+      <EntityTypeMapping TypeName="JP_QuanLySieuThiModel.transaction">
+        <MappingFragment StoreEntitySet="transactions">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="transactions_id" ColumnName="transactions_id" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="user_id" ColumnName="user_id" />
+          <ScalarProperty Name="username" ColumnName="username" />
+          <ScalarProperty Name="phonenumber" ColumnName="phonenumber" />
+          <ScalarProperty Name="gmail" ColumnName="gmail" />
+          <ScalarProperty Name="address" ColumnName="address" />
+          <ScalarProperty Name="total_price" ColumnName="total_price" />
+          <ScalarProperty Name="payment" ColumnName="payment" />
+          <ScalarProperty Name="payment_info" ColumnName="payment_info" />
+          <ScalarProperty Name="message" ColumnName="message" />
+          <ScalarProperty Name="security" ColumnName="security" />
+          <ScalarProperty Name="created" ColumnName="created" />
+          <ScalarProperty Name="shipping" ColumnName="shipping" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="users">
+      <EntityTypeMapping TypeName="JP_QuanLySieuThiModel.user">
+        <MappingFragment StoreEntitySet="users">
+          <ScalarProperty Name="user_id" ColumnName="user_id" />
+          <ScalarProperty Name="gmail" ColumnName="gmail" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="username" ColumnName="username" />
+          <ScalarProperty Name="address" ColumnName="address" />
+          <ScalarProperty Name="phone" ColumnName="phone" />
+          <ScalarProperty Name="avatar" ColumnName="avatar" />
+          <ScalarProperty Name="position" ColumnName="position" />
+          <ScalarProperty Name="created" ColumnName="created" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
